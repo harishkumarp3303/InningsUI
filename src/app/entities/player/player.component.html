@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="mt-3 ms-2">Player List</h1>
+    <div class="row">
+        <div class="card m-3" style="width: 18rem;" *ngFor="let player of players" >
+            <img src="data:image/png;base64,{{player.playerImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">{{player.name}}</h3>
+                <h6>Role : {{player.role}}</h6>
+                <p>Age : {{player.age}}</p>
+            </div>
+          </div>
+    </div>
+</div>
