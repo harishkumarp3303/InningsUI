@@ -9,7 +9,7 @@ export class PlayerService {
   constructor(private http:HttpClient) { }
 
   public getAllPlayers(){
-    return this.http.get("http://localhost:8083/player")
+    return this.http.get("http://localhost:8080/Player-0.0.1-SNAPSHOT/player")
   }
 
 }
